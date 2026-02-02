@@ -164,10 +164,10 @@ def reduce_spectrum(sci_paths, bias_paths, dark_paths, flat_paths, arc_paths):
 data_dir = '/home/borderbenja/mlof/demo_data/'
 
 # These match the file names you provided previously
-sci_files  = ['Spectra_Trial-Calibration__60s.fits'] 
-bias_files = ['Spectra_Trial_Bias_0s_20250910_162704-1.fits'] 
-dark_files = ['Spectra_Trial-Dark_NEWW_20s_20251014_230009-1.fits'] 
-flat_files = ['Whijee__Incandescent__20s.fits'] 
-arc_files  = ['Spectra_Trial-Calibration__60s.fits']
+sci_files  = ['test_data/' + 'Spectra_Trial-Calibration__60s.fits'] 
+dark_files = ['test_data/' + 'Spectra_Trial-Dark_NEWW_20s_20251014_230009-1.fits'] 
+bias_files = ['test_data/' + 'Spectra_Trial_Bias_0s_20250910_162704-1.fits'] 
+flat_files = ['test_data/' + 'Whijee__Incandescent__20s.fits'] 
+arc_files  = [c'Spectra_Trial-Calibration__60s.fits']
 
 reduce_spectrum(sci_files, bias_files, dark_files, flat_files, arc_files)
